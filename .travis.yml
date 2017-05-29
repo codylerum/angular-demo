@@ -9,9 +9,6 @@ node_js:
 addons:
   chrome: beta
 
-before_install:
-  - google-chrome-beta --headless --no-sandbox --disable-gpu --remote-debugging-port=9222 http://localhost
-
 before_script:
     - npm install -g @angular/cli
     - ng build -prod
