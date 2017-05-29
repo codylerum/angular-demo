@@ -7,12 +7,11 @@ node_js:
     - "7"
 
 addons:
-  chrome: beta
+  chrome: dev
 
 before_install:
-  - google-chrome-beta --headless --disable-gpu --remote-debugging-port=9222 http://www.google.com
+  - google-chrome-dev --headless --disable-gpu --remote-debugging-port=9222 http://localhost
 
 before_script:
-    - npm install --save-dev dpogue/karma-headless-chrome-launcher
     - npm install -g @angular/cli
     - ng build -prod
