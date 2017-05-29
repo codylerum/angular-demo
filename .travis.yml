@@ -14,7 +14,7 @@ addons:
   chrome: beta
 
 env:
-  - GOOGLE_CHROME_BINARY=/usr/bin/google-chrome-beta
+  - CHROME_BIN=/usr/bin/google-chrome-beta
 
 before_script:
     - npm install -g @angular/cli
