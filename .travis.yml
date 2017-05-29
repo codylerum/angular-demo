@@ -7,10 +7,10 @@ node_js:
     - "7"
 
 addons:
-  chrome: dev
+  chrome: beta
 
 before_install:
-  - google-chrome-dev --headless --no-sandbox --disable-gpu --remote-debugging-port=9222 http://localhost
+  - google-chrome-beta --headless --no-sandbox --disable-gpu --remote-debugging-port=9222 http://localhost
 
 before_script:
     - npm install -g @angular/cli
