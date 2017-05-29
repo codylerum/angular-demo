@@ -13,7 +13,7 @@ before_script:
   - sleep 3
 
 node_js:
-    - "6"
+    - "7"
 
 before_script:
     - npm install -g @angular/cli
