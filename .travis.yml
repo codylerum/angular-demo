@@ -18,4 +18,4 @@ env:
 
 before_script:
     - npm install -g @angular/cli
-    - ng build --prod -v -aot
+    - ng build --prod -aot
